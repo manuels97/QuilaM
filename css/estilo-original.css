@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap');
+
+*{
+   
+   margin: 0;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.bodys{
+   background-color: rgba(192, 149, 30, 0.815) ;
+   overflow-x: hidden;
+ }  
+header{
+   width: 100%;
+   height: 10vh;
+   background: rgb(18,62,88);
+   background: linear-gradient(0deg, rgba(18,62,88,1) 0%, rgba(33,56,74,1) 45%, rgba(39,54,68,1) 97%); 
+   padding:3px ;
+   display: flex;
+   border: black solid;
+   justify-content: space-between;
+   font-weight: bold;
+   align-items: flex-end;
+}
+
+.logo-principal a img{
+   width: 100px;
+   height: 8vh;
+   padding: 5px;  
+}
+
+
+header nav ul {
+   list-style: none;
+   display: flex;
+   padding-left: 5px;   
+} 
+
+ header nav ul li {
+   padding-left: 50px;
+   
+} 
+
+
+header nav ul a {
+   text-decoration: none;
+   color: black;
+   font-size: 15px;
+   font-family: 'Oswald', sans-serif;
+} 
+
+
+
+.redes-header a svg {
+   width: 30px;
+   height: 30px;
+   color:rgba(192, 149, 30, 0.815) ;
+   padding: 2px;
+}
+
+.boton-fb{
+   padding-right: 15px;
+}
+
+nav a:hover{
+   color: rgba(177, 137, 29, 0.815);
+   font-size: 18px;
+}
+
+
+.logo-principal img{
+   width: 18%;
+} 
+
+.contenido-nosotros {
+   display: flex;
+   justify-content: baseline;
+   padding-bottom: 100px; 
+}
+
+
+.textos-nosotros{
+   width: 60%;
+   padding: 20px;
+}
+
+
+.img-nosotros img{
+   width: 60vh;
+   padding-left: 100px;
+  
+}
+
+
+
+.listado-productos {
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-template-rows: auto auto auto;
+   list-style: none;
+   padding: 50px;
+   
+}
+.listado-productos li{
+   display: flex;
+   align-items:center;
+   flex-wrap: wrap;
+   flex-direction: column;
+   
+   
+}
+
+.listado-productos li h2{
+   color: rgb(18,62,88);
+   font-size: 30px;
+   padding: 10px;
+}
+
+
+
+.producto-uno{
+   grid-column: 1/2;
+   grid-row: 1/2;
+   justify-self: center;
+   padding: 100px;
+}
+.producto-dos{
+   grid-column: 2/3;
+   grid-row: 1/2;
+   justify-self: center;
+   padding: 100px;
+   
+}
+.producto-tres{
+   grid-column: 1/2;
+   grid-row: 2/3;
+   justify-self: center;
+   padding: 100px;
+   ;
+}
+.producto-cuatro{
+   grid-column: 2/3;
+   grid-row: 2/3;
+   justify-self: center;
+   padding: 100px;
+}
+.producto-cinco{
+   grid-column: 1/2;
+   grid-row: 3/4;
+   justify-self: center;
+   padding: 100px;
+   
+}
+.producto-seis{
+   grid-column: 2/3;
+   grid-row: 3/4;
+   justify-self: center;
+   padding: 100px;
+}
+
+
+
+.cacao {
+   height: 220px;
+   width: 200px;
+   border-style: solid;
+   border-radius: 50%;
+   border-width: 15px;
+}
+.cacao:hover{
+   color: #123E58;
+}
+
+.natu {
+   height: 220px;
+   width: 200px;
+   border-style: solid;
+   border-radius: 50%;
+   border-width: 15px;
+}
+.natu:hover{
+   color: #123E58;
+}
+.dulce {
+   height: 220px;
+   width: 200px;
+   border-style: solid;
+   border-radius: 50%;
+   border-width: 15px;
+}
+.dulce:hover{
+   color: #123E58;
+}
+
+
+
+.boton-wsp svg {
+   background-color: green;
+   width: 45px;
+   height: 45px;
+   bottom: 30px;
+   right: 30px;
+   position:fixed;
+   color: white;
+   border-radius: 50%;  
+}
+
+.boton-wsp svg:hover{
+   background-color:transparent;
+}
+
+.formulario{
+   font-family:'Times New Roman', Times, serif;
+  margin: auto;
+  width: 500px;
+  padding: 20px 20px;
+   box-sizing: border-box;
+   margin-top: 20px;
+   background:#123E58;
+}
+.formulario h1 {
+   color :rgba(177, 137, 29, 0.815);
+   margin-bottom: 17px;
+   font-size: 40px;  
+   text-align: center;  
+}
+
+.formulario input, textarea {
+width: 90%;
+margin-bottom: 20px;
+padding: 10px;
+}
+
+.formulario textarea{
+  min-width: 100px;
+  max-width: 400px;
+}
+
+#boton-enviar{
+   background: #31384a;
+   color: aliceblue;
+   padding: 20px;
+   font-size: 17px;
+}
+#boton-enviar:hover{
+   background: rgba(177, 137, 29, 0.815);
+   cursor: pointer;
+}
+
+.contacto-redes {
+   bottom: 500px;
+  grid-area: contact;
+   padding: 20px;
+   width: 550px;
+   height: 250px;
+   left: 100px;
+}
+
+.bcontacto{
+   background-color:rgba(177, 137, 29, 0.815);
+}
+
+.contacto-redes a svg{
+   padding: 30px 20px;
+   width: 80px;
+   height: 80px;
+}
+
+
+
+
+.encabezado{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.encabezado img{
+   width: 33vh;
+}
+
+.titulo-mani{
+   position:absolute;
+   font-weight: bold;
+   font-size: 35px;
+   font-style:oblique;
+   color: #31384a;
+}
+
+
+
+.primer-img{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: rgb(174, 174, 98);  
+   height: 90vh;
+   
+   background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.4)
+   )  
+  , url(../img/imagenn.jpg);
+  background-size: cover; 
+}
+
+.segunda-img{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: rgb(174, 174, 98);  
+   height: 90vh;
+   
+   background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.4)
+   )  
+  , url(../img/fondoq1.JPG);
+  border-top: 7px black solid;
+  border-bottom: 7px black solid;  
+}
+
+
+
+
+.footer-gral{
+   background-color: #071924;;
+   width: 100%;
+   height: 10vh;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: ;
+   
+}
+
+.footer-gral h1,h2{
+   color: white; 
+   margin-right: 80px;
+   font-size: 20px;
+}
+
+.contacto-h1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.contacto-h1 h1{
+   font-size: 30px;
+   width: fit-content;
+   background-color:#2b4381;
+   border-style: solid;
+}
+
+.contacto-h1:hover{
+   color:  rgba(192, 149, 30, 0.815);
+   
+}
+
+.contacto-grid{
+   background-color: rgba(192, 149, 30, 0.815);
+}
+
+ .grid-contacto{
+   display: grid;
+   grid-template-columns: 30% 40% 30%;
+   grid-template-rows: repeat(3, 33%);
+   padding-bottom: 100px;
+} 
+
+
+.form-grid {
+   grid-column: 2/3;
+   grid-row: 3/4;
+   align-self: flex-sta;
+} 
+
+ .subtitulo-contacto {
+   grid-column: 1/2;
+   grid-row: 3/5;
+   justify-self: center;
+   
+   
+} 
+
+.subtitulo-contacto h2{
+   margin-left: 20px;
+   color: rgb(18,62,88);
+   background-color: rgb(18,62,88);
+   color: white;
+}
+
+.contacto-redes-grid {
+   grid-column: 3/4;
+   grid-row: 3/5;
+   justify-self: center;
+
+} 
+
+
+.contacto-redes-grid svg{
+   width: 50px;
+   height: 50px;
+   padding: 10px;
+   color:rgb(18,62,88);
+
+}
+.contacto-redes-grid svg:hover{
+   color:lightblue;
+}
+
+.im-recetas {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: auto auto auto;
+   grid-gap: 100px; 
+   padding-top: 40px;
+   
+}
+
+.im-recetas div {   
+   width: auto;
+   height: auto; 
+   transition: 1s; 
+}
+
+.im-recetas div img{
+   width: 300px;
+   height: 300px;
+   border-radius: 30px;
+   
+}
+.im-recetas div:hover{
+   border: 10px rgb(18,62,88) solid;
+   border-radius: 30px;
+   transform: scale(1.2) ;
+   
+}
+.im-recetas div p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.receta-uno {
+   grid-column: 1/2;
+   grid-row: 1/2;
+   justify-self: center;
+}
+
+
+.receta-dos{
+   grid-column: 2/3;
+   grid-row: 1/2;
+   justify-self: center;  
+}
+
+
+.receta-tres{
+   grid-column: 3/4;
+   grid-row: 1/2;
+   justify-self: center;  
+}
+
+.receta-cuatro{
+   grid-column: 1/2;
+   grid-row: 2/3;
+   justify-self: center;  
+}
+
+.receta-cinco{
+   grid-column: 2/3;
+   grid-row: 2/3;
+   justify-self: center;  
+}
+
+.receta-seis{
+   grid-column: 3/4;
+   grid-row: 2/3;
+   justify-self: center;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 575px) {
+   
+   header{
+      height: fit-content;
+      
+   }
+   header nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }   
+   .im-recetas{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .im-recetas div{
+      
+      transition: none;
+   }
+   .im-recetas div:hover{
+      transform: none;
+      border: 3px rgb(18,62,88) solid;
+     
+   }
+  
+   .im-recetas div img{
+      width: 200px;
+      height: 200px; 
+   }
+   .redes-header{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .listado-productos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+   }
+
+   .listado-productos li{
+     text-align: center;
+     padding: 20px;
+   }
+
+   .listado-productos li img {
+      width: 150px ;
+      height: 150px;
+   }
+   
+   .contacto-h1 {
+      padding: 10px;
+   }
+   
+  .contacto-h1 h1 {
+   font-size: 20px;
+   
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+   
+   header{
+      height: fit-content;
+      
+   }
+   header nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }   
+   .im-recetas{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .im-recetas div{
+      
+      transition: none;
+   }
+   .im-recetas div:hover{
+      transform: none;
+      border: 3px rgb(18,62,88) solid;
+     
+   }
+  
+   .im-recetas div img{
+      width: 200px;
+      height: 200px; 
+   }
+   .redes-header{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .listado-productos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+   }
+
+   .listado-productos li{
+     text-align: center;
+     padding: 20px;
+   }
+
+   .listado-productos li img {
+      width: 150px ;
+      height: 150px;
+   }
+   
+   .contacto-h1 {
+      padding: 10px;
+   }
+   
+  .contacto-h1 h1 {
+   font-size: 20px;
+   
+  }
+
+  
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+   
+   header{
+      height: fit-content;
+   }
+   header nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }   
+
+   .im-recetas {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: repeat(3, 1fr);
+   }
+ 
+   .receta-uno {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      justify-self: center;
+   }
+   
+   
+   .receta-dos{
+      grid-column: 2/3;
+      grid-row: 1/2;
+      justify-self: center;  
+   }
+   
+   
+   .receta-tres{
+      grid-column: 1/2;
+      grid-row: 2/3;
+      justify-self: center;  
+   }
+   
+   .receta-cuatro{
+      grid-column: 2/3;
+      grid-row: 2/3;
+      justify-self: center;  
+   }
+   
+   .receta-cinco{
+      grid-column: 1/2;
+      grid-row: 3/4;
+      justify-self: center;  
+   }
+   
+   .receta-seis{
+      grid-column: 2/3;
+      grid-row: 3/4;
+      justify-self: center;
+   }
+   .im-recetas div {
+      padding: 10px;
+      transition: none;
+      }
+   
+      .im-recetas div:hover{
+         transform: none;
+         border:  rgb(18,62,88) solid; 
+      }
+      
+   
+      .im-recetas div img{
+         width: 200px;
+         height: 200px; 
+   
+      }
+   
+
+   .listado-productos{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+   }
+
+   .listado-productos li{
+      display: flex;
+     text-align: center;
+     padding: 30px;
+   }
+
+   .listado-productos li img {
+      width: 200px ;
+      height: 200px;
+   }
+
+   .contacto-h1{
+      padding: 10px;
+   }
+
+   .contacto-h1 h1 {
+      font-size: 25px;
+      
+     }
+   }
+
+
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+ 
+   .im-recetas {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: repeat(3, 1fr);
+   }
+ 
+   .receta-uno {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      justify-self: center;
+   }
+   
+   
+   .receta-dos{
+      grid-column: 2/3;
+      grid-row: 1/2;
+      justify-self: center;  
+   }
+   
+   
+   .receta-tres{
+      grid-column: 1/2;
+      grid-row: 2/3;
+      justify-self: center;  
+   }
+   
+   .receta-cuatro{
+      grid-column: 2/3;
+      grid-row: 2/3;
+      justify-self: center;  
+   }
+   
+   .receta-cinco{
+      grid-column: 1/2;
+      grid-row: 3/4;
+      justify-self: center;  
+   }
+   
+   .receta-seis{
+      grid-column: 2/3;
+      grid-row: 3/4;
+      justify-self: center;
+   }
+ 
+
+      .contacto-h1{
+         padding: 10px;
+      }
+   
+      .contacto-h1 h1 {
+         font-size: 30px;
+         
+        }
+
+        .listado-productos{
+         display: flex;
+         flex-wrap: wrap ;
+         justify-content: space-around;
+         align-content: center;
+         
+         
+         
+      }
+   
+      .listado-productos li{
+         display: flex;
+        text-align: center;
+        padding: 30px;
+      }
+   
+      .listado-productos li img {
+         width: 200px ;
+         height: 200px;
+      }
+
+      .listado-productos li h2{
+         font-size: 25px;
+      }
+
+      .listado-productos li h3{
+       
+      }
+   
+      .contacto-h1{
+         padding: 10px;
+      }
+   
+      .contacto-h1 h1 {
+         font-size: 25px;
+         
+        }
+   }
+    
+
+
+
+
