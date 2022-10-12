@@ -331,7 +331,7 @@ padding: 10px;
    height: 10vh;
    display: flex;
    justify-content: space-between;
-   margin-bottom: ;
+
    
 }
 
@@ -799,9 +799,7 @@ padding: 10px;
          font-size: 25px;
       }
 
-      .listado-productos li h3{
-       
-      }
+      
    
       .contacto-h1{
          padding: 10px;

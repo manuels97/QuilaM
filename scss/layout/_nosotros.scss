@@ -1,0 +1,29 @@
+.contenedor-nosotros{
+   display: flex;
+   justify-content: baseline;
+   align-items: center;
+         main {
+         display: flex;
+         
+      
+         article{
+            width: 80%; 
+            padding-left: 10px;        
+            }
+
+         
+         }
+         .img-nosotros{
+            padding-right: 30px;
+            display: flex;
+            justify-content: end;
+            
+         }
+         .img-nosotros img{     
+            width: 60vh;
+            height: 60vh;
+            
+         }
+}
+
+

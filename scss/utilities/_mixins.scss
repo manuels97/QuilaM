@@ -1,0 +1,5 @@
+@mixin prop-grid ($column,$row,$js) {
+    grid-column: $column;
+    grid-row: $row;
+    justify-self: $js;
+}

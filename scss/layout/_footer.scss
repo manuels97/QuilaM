@@ -4,10 +4,13 @@
     height: 10vh;
     display: flex;
     justify-content: space-between;  
- }
+    ;
+    bottom: 0;
+   
  
- .footer-gral h1,h2{
+    h1,h2{
     color: white; 
     margin-right: 80px;
     font-size: 20px;
  }
+}
