@@ -1,10 +1,15 @@
 .subtitulo-contacto{
     display: flex;
     justify-content: center;
-
+    background-color: $azulQuila;
+    border-radius: 30%;
+    
 
     h2{
         font-size: 25px;
+        font-weight: bold;
+        color: black;
+        
     }
     
 }

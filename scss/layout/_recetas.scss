@@ -69,11 +69,26 @@
    display: flex;
    justify-content: center;
    padding: 150px;
-   
-
+   background-color: $azulQuila;
+   border-radius: 30%;
       h1{
          font-size: 35px;
-         
+         text-align: center; 
+         font-weight: bold;  
+         color: black;   
+         padding: 10px;  
       }
  }
  
+ .recetas-redes {
+  display: flex;
+  justify-content: center;
+  
+  
+   a svg{
+   width: 60px;
+   height: 60px;
+   padding: 10px;
+   color:rgb(18,62,88);
+  }
+}

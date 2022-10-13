@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 header {
   background: rgb(18, 62, 88);
   background: linear-gradient(0deg, rgb(18, 62, 88) 0%, rgb(33, 56, 74) 45%, rgb(39, 54, 68) 97%);
@@ -13,6 +20,9 @@ header {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/imagenn.jpg);
   background-size: cover;
 }
+.primer-img h1 {
+  font-weight: bold;
+}
 
 .segunda-img {
   display: flex;
@@ -23,6 +33,9 @@ header {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/fondoq1.JPG);
   border-top: 7px black solid;
   border-bottom: 7px black solid;
+}
+.segunda-img h1 {
+  font-weight: bold;
 }
 
 .boton-wsp svg {
@@ -37,10 +50,10 @@ header {
 }
 
 .boton-wsp svg:hover {
-  background-color: transparent;
+  background-color: rgba(192, 149, 30, 0.815);
 }
 
-body {
+.colorf {
   background-color: rgba(192, 149, 30, 0.815);
 }
 
@@ -76,15 +89,19 @@ body {
 
 .contenedor-nosotros {
   display: flex;
+  align-content: baseline;
+}
+.contenedor-nosotros .contenido-nosotros {
+  display: flex;
   justify-content: baseline;
   align-items: center;
 }
-.contenedor-nosotros main {
-  display: flex;
-}
-.contenedor-nosotros main article {
+.contenedor-nosotros .contenido-nosotros article {
   width: 80%;
-  padding-left: 10px;
+  background-color: rgb(18, 62, 88);
+  border-radius: 15%;
+  padding: 40px;
+  color: black;
 }
 .contenedor-nosotros .img-nosotros {
   padding-right: 30px;
@@ -103,6 +120,7 @@ body {
   .contenido-nosotros {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 5px;
   }
   .contenido-nosotros article h1 {
@@ -114,8 +132,8 @@ body {
     padding-right: 5px;
   }
   .img-nosotros img {
-    width: 100px;
-    height: 100px;
+    height: 25vh;
+    width: 100%;
   }
   .encabezado img {
     width: 15vh;
@@ -132,6 +150,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 5px;
+    align-items: center;
   }
   .contenido-nosotros article h1 {
     font-size: 25px;
@@ -158,6 +177,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 5px;
+    align-items: center;
   }
   .contenido-nosotros article h1 {
     font-size: 28px;
@@ -186,6 +206,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 5px;
+    align-items: center;
   }
   .contenido-nosotros article h1 {
     font-size: 30px;
@@ -279,9 +300,26 @@ body {
   display: flex;
   justify-content: center;
   padding: 150px;
+  background-color: rgb(18, 62, 88);
+  border-radius: 30%;
 }
 .subt-recetas h1 {
   font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+}
+
+.recetas-redes {
+  display: flex;
+  justify-content: center;
+}
+.recetas-redes a svg {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  color: rgb(18, 62, 88);
 }
 
 @media screen and (min-width: 300px) and (max-width: 575px) {
@@ -461,9 +499,13 @@ body {
 .subtitulo-contacto {
   display: flex;
   justify-content: center;
+  background-color: rgb(18, 62, 88);
+  border-radius: 30%;
 }
 .subtitulo-contacto h2 {
   font-size: 25px;
+  font-weight: bold;
+  color: black;
 }
 
 .contacto-redes {
@@ -475,10 +517,6 @@ body {
   height: 60px;
   padding: 10px;
   color: rgb(18, 62, 88);
-}
-
-body {
-  background-color: rgba(192, 149, 30, 0.815);
 }
 
 @media screen and (min-width: 300px) and (max-width: 575px) {
