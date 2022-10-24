@@ -1,0 +1,32 @@
+@media screen and (min-width: 300px) and (max-width: 575px) {
+  .footer-gral{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+
+    h1{
+        font-size: 19px;
+    }
+
+    h2{
+        font-size: 10px;
+    }
+    a img{
+        scale: 0.6;
+    }
+    div a svg{
+        scale: 0.6;
+    }
+  }
+    
+}
+
+@media  screen and (min-width: 576px) and (max-width: 767px) {
+    .footer-gral{
+        display: flex;
+        justify-content: space-between;       
+    }
+}
+

@@ -1,7 +1,9 @@
 .primer-img{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content: space-around;
+    
+    
     color: rgb(174, 174, 98);  
     height: 90vh;
     
@@ -12,8 +14,13 @@
     )  
    , url(../img/imagenn.jpg);
    background-size: cover; 
-   h1{
+   h1, h2{
       font-weight: bold;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 60px;
+      color: $amarilloQuila;
+      
+      
    }
  }
  
@@ -29,11 +36,15 @@
        rgba(0,0,0,0.4),
        rgba(0,0,0,0.4)
     )  
-   , url(../img/fondoq1.JPG);
+   , url(../img/toast.JPG);
    border-top: 7px black solid;
    border-bottom: 7px black solid;
+   background-position: 35%;
    h1{
       font-weight: bold;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 60px;
+      color: $amarilloQuila;
    }  
  }
 

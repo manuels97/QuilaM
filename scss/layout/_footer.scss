@@ -4,13 +4,29 @@
     height: 10vh;
     display: flex;
     justify-content: space-between;  
-    ;
     bottom: 0;
    
  
-    h1,h2{
-    color: white; 
-    margin-right: 80px;
-    font-size: 20px;
- }
+        h1,h2{
+        color: white; 
+        margin-right: 80px;
+        font-size: 20px;
+        }
+        a img{
+            height: 80px;
+            padding: 5px;
+            
+        }
+        a img:hover{
+                scale: 1.1;
+            }
+
+        .recetas-redes a svg{
+            color: beige;
+            align-items: end;
+        }
+}
+
+.card div a {
+    background-color: red;
 }

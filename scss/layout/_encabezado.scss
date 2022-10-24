@@ -5,12 +5,14 @@
 
     img{
       width: 33vh;
+      
    }
     h1{
-      position:absolute;
       font-weight: bold;
-      font-size: 35px;
-      font-style:oblique;
-      color: #31384a;
+      font-size: 60px;
+      color: $amarilloQuila;
+      font-family: 'Dancing Script', cursive;
+      padding: 100px;
+      text-decoration: underline;
    }
  }

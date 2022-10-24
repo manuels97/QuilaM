@@ -68,15 +68,15 @@
  .subt-recetas {
    display: flex;
    justify-content: center;
-   padding: 150px;
-   background-color: $azulQuila;
-   border-radius: 30%;
+   padding: 100px;
+   
       h1{
          font-size: 35px;
          text-align: center; 
          font-weight: bold;  
-         color: black;   
+         color: $azulQuila;   
          padding: 10px;  
+         font-family: 'Work Sans', sans-serif;;
       }
  }
  
@@ -91,4 +91,9 @@
    padding: 10px;
    color:rgb(18,62,88);
   }
+}
+
+  .colorb{
+    background-color: rgb(209, 209, 187);
+   
 }

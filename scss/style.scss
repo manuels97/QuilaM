@@ -7,11 +7,13 @@
 @import "./layout/_footer.scss";
 @import "./layout/_encabezado.scss";
 @import "./layout/_nosotros.scss";
-@import"./layout/_mediaQ-nosotros.scss";
+@import"./layout/media/_mediaQ-nosotros.scss";
 @import "./layout/_productos.scss";
 @import "./layout/_recetas.scss";
-@import "./layout/_mediaQ-recetas.scss";
+@import "./layout/media/_mediaQ-recetas.scss";
 @import "./layout/_contacto.scss";
-@import"./layout/_mediaQ-index.scss";
+@import "./layout/media/mediaq-contacto";
+@import"./layout/media/_mediaQ-index.scss";
+@import "./layout/media/_mediaQ-footer.scss";
 
 

@@ -1,12 +1,22 @@
 header{   
-    background: $azulQuila;
-    background: linear-gradient(0deg, rgba(18,62,88,1) 0%, rgba(33,56,74,1) 45%, rgba(39,54,68,1) 97%);   
+       
     font-weight: bold;
+    background-color: rgb(40, 88, 105);
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    
+    #amarilloq:hover{
+      scale: 1.1;
+    }
+
+  }
+
+ 
+
+ .nav-item:hover{
+    scale: 1.2;
  }
  
- 
- 
- 
- 
+
  
  

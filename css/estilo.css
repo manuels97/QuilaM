@@ -1,27 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,500&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 header {
-  background: rgb(18, 62, 88);
-  background: linear-gradient(0deg, rgb(18, 62, 88) 0%, rgb(33, 56, 74) 45%, rgb(39, 54, 68) 97%);
   font-weight: bold;
+  background-color: rgb(40, 88, 105);
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+}
+header #amarilloq:hover {
+  scale: 1.1;
+}
+
+.nav-item:hover {
+  scale: 1.2;
 }
 
 .primer-img {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   color: rgb(174, 174, 98);
   height: 90vh;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/imagenn.jpg);
   background-size: cover;
 }
-.primer-img h1 {
+.primer-img h1, .primer-img h2 {
   font-weight: bold;
+  font-family: "Work Sans", sans-serif;
+  font-size: 60px;
+  color: rgba(192, 149, 30, 0.8156862745);
 }
 
 .segunda-img {
@@ -30,12 +44,16 @@ header {
   justify-content: center;
   color: rgb(174, 174, 98);
   height: 90vh;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/fondoq1.JPG);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/toast.JPG);
   border-top: 7px black solid;
   border-bottom: 7px black solid;
+  background-position: 35%;
 }
 .segunda-img h1 {
   font-weight: bold;
+  font-family: "Work Sans", sans-serif;
+  font-size: 60px;
+  color: rgba(192, 149, 30, 0.8156862745);
 }
 
 .boton-wsp svg {
@@ -50,11 +68,11 @@ header {
 }
 
 .boton-wsp svg:hover {
-  background-color: rgba(192, 149, 30, 0.815);
+  background-color: rgba(192, 149, 30, 0.8156862745);
 }
 
 .colorf {
-  background-color: rgba(192, 149, 30, 0.815);
+  background-color: rgba(192, 149, 30, 0.8156862745);
 }
 
 .footer-gral {
@@ -70,6 +88,21 @@ header {
   margin-right: 80px;
   font-size: 20px;
 }
+.footer-gral a img {
+  height: 80px;
+  padding: 5px;
+}
+.footer-gral a img:hover {
+  scale: 1.1;
+}
+.footer-gral .recetas-redes a svg {
+  color: beige;
+  align-items: end;
+}
+
+.card div a {
+  background-color: red;
+}
 
 .encabezado {
   display: flex;
@@ -80,11 +113,12 @@ header {
   width: 33vh;
 }
 .encabezado h1 {
-  position: absolute;
   font-weight: bold;
-  font-size: 35px;
-  font-style: oblique;
-  color: #31384a;
+  font-size: 60px;
+  color: rgba(192, 149, 30, 0.8156862745);
+  font-family: "Dancing Script", cursive;
+  padding: 100px;
+  text-decoration: underline;
 }
 
 .contenedor-nosotros {
@@ -98,10 +132,11 @@ header {
 }
 .contenedor-nosotros .contenido-nosotros article {
   width: 80%;
-  background-color: rgb(18, 62, 88);
-  border-radius: 15%;
   padding: 40px;
-  color: black;
+  color: rgb(18, 62, 88);
+}
+.contenedor-nosotros .contenido-nosotros h1 {
+  font-family: "Work Sans", sans-serif;
 }
 .contenedor-nosotros .img-nosotros {
   padding-right: 30px;
@@ -111,11 +146,22 @@ header {
 .contenedor-nosotros .img-nosotros img {
   width: 60vh;
   height: 60vh;
+  box-shadow: -20px 20px rgb(224, 224, 199);
 }
 
 @media screen and (min-width: 300px) and (max-width: 575px) {
   .contenedor-nosotros {
     display: inherit;
+  }
+  .contenedor-nosotros .img-nosotros {
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .contenedor-nosotros .img-nosotros img {
+    height: 25vh;
+    width: 100%;
+    box-shadow: none;
   }
   .contenido-nosotros {
     display: flex;
@@ -126,25 +172,18 @@ header {
   .contenido-nosotros article h1 {
     font-size: 20px;
   }
-  .img-nosotros {
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .img-nosotros img {
-    height: 25vh;
-    width: 100%;
-  }
-  .encabezado img {
-    width: 15vh;
-  }
-  .encabezado h1 {
-    font-size: 25px;
-  }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .contenedor-nosotros {
     display: inherit;
+  }
+  .contenedor-nosotros .img-nosotros {
+    padding-bottom: 5px;
+  }
+  .contenedor-nosotros .img-nosotros img {
+    height: 30vh;
+    width: 100%;
+    box-shadow: none;
   }
   .contenido-nosotros {
     display: flex;
@@ -155,23 +194,20 @@ header {
   .contenido-nosotros article h1 {
     font-size: 25px;
   }
-  .img-nosotros {
-    padding-bottom: 5px;
-  }
-  .img-nosotros img {
-    height: 30vh;
-    width: 100%;
-  }
-  .encabezado img {
-    width: 17vh;
-  }
-  .encabezado h1 {
-    font-size: 27px;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .contenedor-nosotros {
     display: inherit;
+  }
+  .contenedor-nosotros .img-nosotros {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor-nosotros .img-nosotros img {
+    height: 40vh;
+    width: 70%;
+    box-shadow: none;
   }
   .contenido-nosotros {
     display: flex;
@@ -182,25 +218,20 @@ header {
   .contenido-nosotros article h1 {
     font-size: 28px;
   }
-  .img-nosotros {
-    padding-bottom: 5px;
-    display: flex;
-    justify-content: center;
-  }
-  .img-nosotros img {
-    height: 40vh;
-    width: 70%;
-  }
-  .encabezado img {
-    width: 19vh;
-  }
-  .encabezado h1 {
-    font-size: 29px;
-  }
 }
 @media screen and (min-width: 993px) and (max-width: 1200px) {
   .contenedor-nosotros {
     display: inherit;
+  }
+  .contenedor-nosotros .img-nosotros {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor-nosotros .img-nosotros img {
+    height: 50vh;
+    width: 70%;
+    box-shadow: none;
   }
   .contenido-nosotros {
     display: flex;
@@ -211,24 +242,32 @@ header {
   .contenido-nosotros article h1 {
     font-size: 30px;
   }
-  .img-nosotros {
-    padding-bottom: 5px;
-    display: flex;
-    justify-content: center;
-  }
-  .img-nosotros img {
-    height: 50vh;
-    width: 70%;
-  }
-  .encabezado img {
-    width: 21vh;
-  }
-  .encabezado h1 {
-    font-size: 34px;
-  }
 }
 #natural {
   height: 335px;
+}
+
+.subt-productos {
+  display: flex;
+  justify-content: center;
+  align-content: end;
+  padding-bottom: 200px;
+  padding-top: 100px;
+}
+.subt-productos h1 {
+  font-weight: bold;
+  color: rgb(40, 88, 105);
+  font-family: "Work Sans", sans-serif;
+}
+
+.card div {
+  background-color: beige;
+}
+.card div a {
+  background-color: rgb(40, 88, 105);
+}
+.card div h5 {
+  font-weight: bold;
 }
 
 .im-recetas {
@@ -299,16 +338,15 @@ header {
 .subt-recetas {
   display: flex;
   justify-content: center;
-  padding: 150px;
-  background-color: rgb(18, 62, 88);
-  border-radius: 30%;
+  padding: 100px;
 }
 .subt-recetas h1 {
   font-size: 35px;
   text-align: center;
   font-weight: bold;
-  color: black;
+  color: rgb(18, 62, 88);
   padding: 10px;
+  font-family: "Work Sans", sans-serif;
 }
 
 .recetas-redes {
@@ -320,6 +358,10 @@ header {
   height: 60px;
   padding: 10px;
   color: rgb(18, 62, 88);
+}
+
+.colorb {
+  background-color: rgb(209, 209, 187);
 }
 
 @media screen and (min-width: 300px) and (max-width: 575px) {
@@ -499,13 +541,12 @@ header {
 .subtitulo-contacto {
   display: flex;
   justify-content: center;
-  background-color: rgb(18, 62, 88);
-  border-radius: 30%;
 }
 .subtitulo-contacto h2 {
   font-size: 25px;
   font-weight: bold;
-  color: black;
+  color: rgb(18, 62, 88);
+  font-family: "Work Sans", sans-serif;
 }
 
 .contacto-redes {
@@ -519,70 +560,76 @@ header {
   color: rgb(18, 62, 88);
 }
 
+.footer-gral {
+  bottom: 0%;
+}
+
 @media screen and (min-width: 300px) and (max-width: 575px) {
   .primer-img {
-    background-image: none;
-    background-color: rgba(192, 149, 30, 0.815);
-    width: 100%;
+    background-position: 40%;
     align-items: start;
-    height: 100%;
   }
   .primer-img h1 {
-    padding-top: 30px;
-    color: rgb(18, 62, 88);
-    font-size: 17px;
+    padding-top: 60px;
+    font-size: 19px;
     font-weight: bold;
   }
   .segunda-img {
-    background-image: none;
-    background-color: rgba(192, 149, 30, 0.815);
-    border: none;
+    background-position: 40%;
+    align-items: start;
   }
   .segunda-img h1 {
-    color: rgb(18, 62, 88);
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
+    padding-top: 30px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .primer-img {
-    background-image: none;
-    background-color: rgba(192, 149, 30, 0.815);
-    width: 100%;
-    align-items: start;
-    height: 100%;
-  }
   .primer-img h1 {
     padding-top: 70px;
-    color: rgb(18, 62, 88);
-    font-size: 27px;
+    font-size: 34px;
     font-weight: bold;
   }
-  .segunda-img {
-    background-image: none;
-    background-color: rgba(192, 149, 30, 0.815);
-    border: none;
-  }
   .segunda-img h1 {
-    color: rgb(18, 62, 88);
-    font-size: 27px;
+    font-size: 46px;
     font-weight: bold;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .primer-img {
-    align-items: flex-start;
-  }
   .primer-img h1 {
     font-weight: bold;
     padding-top: 100px;
-  }
-  .segunda-img {
-    align-items: flex-start;
+    font-size: 45px;
   }
   .segunda-img h1 {
     font-weight: bold;
     padding-top: 100px;
+    font-size: 52px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 575px) {
+  .footer-gral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-gral h1 {
+    font-size: 19px;
+  }
+  .footer-gral h2 {
+    font-size: 10px;
+  }
+  .footer-gral a img {
+    scale: 0.6;
+  }
+  .footer-gral div a svg {
+    scale: 0.6;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .footer-gral {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
