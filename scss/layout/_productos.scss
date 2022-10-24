@@ -5,7 +5,7 @@
 .subt-productos{
     display: flex;
     justify-content: center;
-    align-content: end;
+    
     padding-bottom: 200px;
     padding-top: 100px;
     
@@ -15,6 +15,8 @@
         font-weight: bold;
         color:rgb(40, 88, 105);
         font-family: 'Work Sans', sans-serif;
+        text-align: center;
+        text-decoration: underline whitesmoke;
     }
 }
 

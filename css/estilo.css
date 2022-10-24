@@ -137,6 +137,7 @@ header #amarilloq:hover {
 }
 .contenedor-nosotros .contenido-nosotros h1 {
   font-family: "Work Sans", sans-serif;
+  text-decoration: underline white;
 }
 .contenedor-nosotros .img-nosotros {
   padding-right: 30px;
@@ -250,7 +251,6 @@ header #amarilloq:hover {
 .subt-productos {
   display: flex;
   justify-content: center;
-  align-content: end;
   padding-bottom: 200px;
   padding-top: 100px;
 }
@@ -258,6 +258,8 @@ header #amarilloq:hover {
   font-weight: bold;
   color: rgb(40, 88, 105);
   font-family: "Work Sans", sans-serif;
+  text-align: center;
+  text-decoration: underline whitesmoke;
 }
 
 .card div {
@@ -347,6 +349,7 @@ header #amarilloq:hover {
   color: rgb(18, 62, 88);
   padding: 10px;
   font-family: "Work Sans", sans-serif;
+  text-decoration: underline whitesmoke;
 }
 
 .recetas-redes {
@@ -547,6 +550,7 @@ header #amarilloq:hover {
   font-weight: bold;
   color: rgb(18, 62, 88);
   font-family: "Work Sans", sans-serif;
+  text-decoration: underline whitesmoke;
 }
 
 .contacto-redes {
@@ -558,10 +562,6 @@ header #amarilloq:hover {
   height: 60px;
   padding: 10px;
   color: rgb(18, 62, 88);
-}
-
-.footer-gral {
-  bottom: 0%;
 }
 
 @media screen and (min-width: 300px) and (max-width: 575px) {
